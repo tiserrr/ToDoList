@@ -16,7 +16,7 @@
             body{
                 background-color: #FAFAFA;
                 font-family: 'Nunito';
-                padding-top: 50px;
+                padding-top: 50px;      
             }
             
             a,
@@ -38,6 +38,7 @@
                padding: 10px;
                border-radius: 5px 5px 0 0;
                background: linear-gradient(90deg, #EEA390 0%, #EB796F 43%, #EB796F 100%);
+               box-shadow: 2px 2px #81413b;
            }
            
            .header-bar a{
@@ -52,7 +53,7 @@
                justify-content: space-between;
                padding: 20px;
                background-color: #fff;
-               border-top: 1px solid rgb(226, 226, 226)
+               border-top: 1px solid rgb(226, 226, 226);
            }
 
            .task-title {
@@ -86,12 +87,18 @@
                font-size: 22px;
                line-height: 0;
            }
+
+           .details-link {
+               text-decoration: none;
+               font-weight: 900;
+               color: green;
+               font-size: 18px;          
+           }
            
            #search-add-wrapper {
                display: flex;
                align-items: center;
                justify-content: space-between;
-               
                padding: 10px;
            }
 
@@ -120,11 +127,15 @@
                border: 1px solid #EB796F;
                background-color: #FAFAFA;
                color: #EB796F;
-               /* padding-top: 4px; */
+               padding: 10px;
                font-size: 14px;
                border-radius: 5px;
                cursor: pointer;
                text-decoration: none;
+           }
+
+           .card-body {
+               padding: 20px;
            }
         </style>
     </head>
