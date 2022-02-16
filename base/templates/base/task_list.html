@@ -1,3 +1,5 @@
+{% extends 'base/main.html' %}
+{% block content %}
 
 {% if request.user.is_authenticated %}
     <p>{{request.user}}</p>
@@ -10,6 +12,11 @@
 <h1>My To Do List {{color}}</h1>
 
 <a href="{% url 'task-create' %}">Add Task</a>
+
+<form method="GET">
+    <input type="text" name="search-area" value="{{search_input}}">
+    <input type="submit" value="Search">
+</form>
 
 <table>
     <tr>
@@ -27,3 +34,6 @@
         <h3>No items in list</h3>
     {% endfor %}
 </table>
+
+
+{% endblock content %}
